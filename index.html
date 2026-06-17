@@ -32,12 +32,26 @@ body{
         padding: 0 24px;
         max-width: 100%;
     }
+}
+@media (max-width: 768px){
 
     .horse{
-        display: none;
+        display: block;
+        position: fixed;
+
+        top: 0;
+        right: 0;
+        bottom: auto;
+
+        width: 30vw;
+        max-width: none;
+        height: auto;
+
+        margin: 0;
     }
+
 }
-    
+
 h1{
     font-size: 1.7rem;
     font-weight: normal;
@@ -78,13 +92,17 @@ a:hover{
     opacity: 0.6;
 }
 
-.horse{
-    position: fixed;
-    right: 20px;
-    bottom: 20px;
+@media (min-width: 769px){
 
-    height: 20vh;
-    width: auto;
+    .horse{
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+
+        height: 20vh;
+        width: auto;
+    }
+
 }
 
 .footer{
